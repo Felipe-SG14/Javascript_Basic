@@ -1,0 +1,80 @@
+'use strict'
+
+//METODOS PARA TRATAR STRINGS
+
+var numero = 444;
+var texto1 = "    Bienvenido al curso de JavaScript       ";
+var texto2 = "Es un muy buen curso";
+
+//TRANSFORMACION DE TEXTOX
+
+//CAMBIAR A STRING
+var dato = numero.toString();
+
+//CONVERTIR A MAYUSCULAS
+dato = texto1.toUpperCase();
+
+//CONVERTIR A MINUSCULAS
+dato = texto1.toLowerCase();
+
+//CALCULAR LA LONGITUD QUE TIENE UN TEXTO
+var nombre = "";
+var long = nombre.length;
+
+//CONCATENAR O UNIR TEXTOS
+
+dato = texto1.concat(texto2);
+
+//O
+
+dato = texto1 + texto2;
+
+//BUSQUEDA DE CARACTERES
+
+//INDEX OF BUSCA LA PRIMERA COINCIDENCIA
+//EQUIVALENTE A INDEXOF ES SEARCH
+var datos = texto1.indexOf("i");
+
+//LASTINDEXOF BUSCA LA ULTIMA COINCIDENCIA
+datos = texto1.lastIndexOf("i");
+
+//METODO MATCH REGRESA UN ARREGLO DE INFORMACION ACERCA DE LA BUSQUEDA DE LA CADENA
+//PARA UNA BUSQUEDA COMPLETA /palabra/g
+//TE DICE CUANTAS COINCIDENCIAS HAY DE LA PALABRA BUSCADA
+datos = texto1.match(/i/g);
+
+//SUBSTRINGS
+//EL PRIMER ARGUMENTO ES DESDE DONDE Y EL SEGUNDO LA LONGITUD
+var sub = texto1.substring(0,10);
+
+//METODO CHAR AT PARA SACAR UNA LETRA EN CONCRETO, DANDOLE LA POSICION
+//REGRESA LA LETRA QUE ESTA EN ESA POSICION
+sub = sub.charAt(8);
+
+//STARTWITH BUSCA UN TEXTO APARTIR CON LO QUE EMPIEZA
+//REGRESA UN TRUE O UN FALSE
+//ENDSWITH LO HACE PERO BUSCANDO EL FINAL
+datos = texto1.startsWith("Bi");
+
+//BUSCA UNA PALABRA DENTRO DE UN STRING, SUELTA UN TRU O UN FALSE
+datos = texto1.includes()
+
+
+//FUNCIONES DE REMPLAZO
+datos = texto1.replace("Bienvenido","")
+
+//SLICE SEPARA APARTIR DE UN INDICE
+datos = texto1.slice(10,22);
+
+//SEPARAR UN STRING DENTRO DE UN ARRAY UTILIZANDO UN SEPARADOR COMUN
+datos = texto1.split(" ");
+
+//METODO TRIM
+//QUITA LOS ESPACIOS QUE HAY AL FINAL Y AL PRINCIPIO DE UN STRING
+//METODO IMPORTANTE
+datos = texto1.trim();
+
+
+console.log(sub);
+console.log(datos);
+console.log(dato);
