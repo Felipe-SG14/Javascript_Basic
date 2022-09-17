@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--SE CARGA LA LIBRERIA DE JQUERY-->
+    <script type="text/javascript" src="js/jquery-3.6.0.js" ></script>
+
+    <!--LOS FICHEROS SE AGREGAN DESPUES DE AÑADIR LAS LIBRERIAS-->
+    <script type="text/javascript" src="js/01-selectores.js" ></script>
+
+    <style>
+        .zebra{
+            border: 5px dashed black;
+        }
+
+        .grande{
+            font-size: 30px;
+        }
+
+        .margen_superior{
+            display: block;
+            margin-top: 45px;
+        }
+
+        .resaltado{
+            border-bottom: 2px solid green;
+        }
+
+    </style>
+
+    <title>JQUERY</title>
+</head>
+<body>
+    <h1>Aprendiendo JQUERY</h1>
+    <p>Ejercicios de JQUERY</p>
+
+    <p id="rojo" class="zebra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, magni earum alias nisi excepturi unde at non modi enim quam pariatur animi consequuntur obcaecati qui distinctio nobis voluptates consequatur doloremque.</p>
+
+    <p id="amarillo" class="sin_borde">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero sint officia dolorem! Dolore, dolorum exercitationem molestias velit perferendis amet facere sapiente, corrupti unde, delectus dolores blanditiis maiores sit incidunt optio!
+    </p>
+
+    <p id="verde" class="sin_borde">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut labore architecto ex, consectetur, consequuntur illum debitis cum est iure fugiat magnam ipsam aliquam mollitia inventore vitae, veniam corrupti nam?
+    </p>
+
+    <p> Soy un parrafo blanco </p>
+
+    <ul>
+        <li><a href="https://www.google.com" title="Google">Ir a Google</a></li>
+        <li><a href="https://www.youtube.com" title="Youtube">Ir a Youtube</a></li>
+    </ul>
+
+    <div id="caja">
+        <p>Hola soy una caja</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li class="elemento2">Elemento 2</li>
+        </ul>
+        <span class="resaltado">Soy un span</span>
+    </div>
+
+</body>
+</html>
